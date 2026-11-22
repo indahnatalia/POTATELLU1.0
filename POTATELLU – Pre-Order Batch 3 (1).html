@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>POTATELLU – Pre-Order Batch 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8e1;--surface:#ffffff;--text:#3a2a12;--muted:#7a6644;--primary:#f5b301;--primary-ink:#3a2a12;--accent:#2f8f4e;--line:#f0dfae;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1e1608;--surface:#2b2010;--text:#fdf0cf;--muted:#cbb88a;--line:#4a3a1a;--accent:#6fd08c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1e1608;--surface:#2b2010;--text:#fdf0cf;--muted:#cbb88a;--line:#4a3a1a;--accent:#6fd08c;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Nunito',system-ui,sans-serif;line-height:1.55}
+h1,h2,h3{font-family:'Fredoka','Nunito',system-ui,sans-serif;margin:0;line-height:1.1}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{padding:48px 0 36px;text-align:center}
+.badge{display:inline-block;background:var(--primary);color:var(--primary-ink);font-weight:700;padding:6px 16px;border-radius:999px;font-size:.95rem}
+.hero h1{font-size:clamp(3rem,13vw,6.5rem);font-weight:700;letter-spacing:-.02em;margin:18px 0 8px}
+.hero p.tag{font-size:1.2rem;font-weight:700;color:var(--accent);margin:0 0 14px}
+.hero p.lead{max-width:540px;margin:0 auto 22px;color:var(--muted)}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 1.05rem 'Fredoka',system-ui,sans-serif;background:var(--primary);color:var(--primary-ink);padding:14px 28px;border-radius:14px;text-decoration:none}
+.btn:hover{filter:brightness(1.07)}
+.btn.alt{background:transparent;border:2px solid var(--primary);color:var(--text)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+section{padding:32px 0}
+h2{font-size:1.9rem;margin-bottom:18px}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.dates div{background:var(--surface);border-left:6px solid var(--primary);padding:16px 18px;border-radius:12px}
+.dates b{display:block;font-family:'Fredoka',sans-serif;font-size:1.25rem}
+.dates span{color:var(--muted)}
+.menu{display:grid;gap:12px}
+.item{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.item .emo{font-size:2rem}
+.item .info{flex:1;min-width:0}
+.item h3{font-size:1.2rem}
+.item small{color:var(--muted)}
+.price{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.1rem;white-space:nowrap}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:36px;height:36px;border-radius:10px;border:2px solid var(--primary);background:transparent;color:var(--text);font-size:1.2rem;font-weight:700;cursor:pointer}
+.qty output{min-width:22px;text-align:center;font-weight:700}
+.free{background:var(--accent);color:#fff;padding:12px 18px;border-radius:12px;font-weight:700;margin-top:14px}
+form{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700}
+input,textarea,select{font:inherit;padding:12px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);width:100%}
+.sum{border-top:2px dashed var(--line);padding-top:12px}
+.sum ul{margin:0 0 10px;padding-left:20px}
+.total{display:flex;justify-content:space-between;font-family:'Fredoka',sans-serif;font-size:1.4rem;font-weight:700}
+.err{color:#c0392b;font-weight:700;min-height:1.2em;margin:0}
+.actions{display:grid;gap:10px}
+footer{text-align:center;padding:36px 20px 48px;color:var(--muted)}
+footer b{font-family:'Fredoka',sans-serif;color:var(--text);font-size:1.2rem}
+@media (max-width:520px){.item{flex-wrap:wrap}.qty{margin-left:auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+  <span class="badge">Open pre-order batch 3 · 23–25 November 2026</span>
+  <h1>POTATELLU</h1>
+  <p class="tag">Savory bites, for better mood!</p>
+  <p class="lead">Baked potato yang creamy, cheesy, dan bikin nagih, ditemani lemon tea yang super refreshing. Missed Batch 2? Sekarang kesempatanmu!</p>
+  <a class="btn" href="#pesan">Pesan sekarang</a>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Jadwal</h2>
+    <div class="dates">
+      <div><b>23–25 November 2026</b><span>Open pre-order batch 3</span></div>
+      <div><b>26 November 2026</b><span>Hari pengantaran</span></div>
+    </div>
+    <p class="free">🛵 Free ongkir area Telkom University!</p>
+  </section>
+
+  <section>
+    <h2>Menu &amp; harga</h2>
+    <div class="menu" id="menu"></div>
+  </section>
+
+  <section id="pesan">
+    <h2>Pesan di sini</h2>
+    <form id="f" novalidate>
+      <label>Nama
+        <input id="nama" autocomplete="name" placeholder="Nama lengkap">
+      </label>
+      <label>Nomor WhatsApp
+        <input id="hp" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx">
+      </label>
+      <label>Alamat pengantaran
+        <textarea id="alamat" rows="2" placeholder="Gedung / asrama / jalan, area Telkom University"></textarea>
+      </label>
+      <label>Catatan (opsional)
+        <input id="cat" placeholder="Contoh: tanpa saus pedas">
+      </label>
+      <div class="sum">
+        <ul id="list"><li>Belum ada pesanan. Pilih menu di atas.</li></ul>
+        <div class="total"><span>Total</span><span id="total">Rp0</span></div>
+      </div>
+      <p class="err" id="err" role="alert"></p>
+      <div class="actions">
+        <button type="submit" class="btn">Kirim pesanan lewat WhatsApp</button>
+        <a class="btn alt" href="https://bit.ly/BUYPOTATELLU" target="_blank" rel="noopener">Atau pesan lewat formulir resmi</a>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p><b>🥔 Don’t just crave it, ORDER IT!</b><br>Ajak temanmu dan nikmati cheesy goodness bareng POTATELLU! 🫶🏻💛</p>
+  <p>Contact person: Admin POTATELLU — <a href="https://wa.me/6281268976906" style="color:var(--accent);font-weight:700">0812-6897-6906</a></p>
+</footer>
+
+<script>
+var ITEMS=[
+ {id:'ori',emo:'🥔',name:'Baked Potato Original',price:15000},
+ {id:'kom',emo:'🥔',name:'Baked Potato Komplit',price:18000},
+ {id:'tea',emo:'🍋',name:'Lemon Tea',price:5000},
+ {id:'bun',emo:'💛',name:'Bundling',price:22000,note:'1 Baked Potato Komplit + 1 Lemon Tea'}
+];
+var qty={};
+function rp(n){return 'Rp'+n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.')}
+var menu=document.getElementById('menu');
+ITEMS.forEach(function(it){
+  qty[it.id]=0;
+  var d=document.createElement('div');d.className='item';
+  d.innerHTML='<span class="emo">'+it.emo+'</span><div class="info"><h3>'+it.name+'</h3>'+(it.note?'<small>'+it.note+'</small>':'')+'</div><span class="price">'+rp(it.price)+'</span>'+
+   '<div class="qty"><button type="button" aria-label="Kurangi '+it.name+'" data-id="'+it.id+'" data-d="-1">−</button><output id="q-'+it.id+'">0</output><button type="button" aria-label="Tambah '+it.name+'" data-id="'+it.id+'" data-d="1">+</button></div>';
+  menu.appendChild(d);
+});
+menu.addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  var id=b.dataset.id;qty[id]=Math.max(0,qty[id]+Number(b.dataset.d));
+  document.getElementById('q-'+id).textContent=qty[id];render();
+});
+function render(){
+  var t=0,h='';
+  ITEMS.forEach(function(it){if(qty[it.id]){t+=qty[it.id]*it.price;h+='<li>'+qty[it.id]+'× '+it.name+' — '+rp(qty[it.id]*it.price)+'</li>'}});
+  document.getElementById('list').innerHTML=h||'<li>Belum ada pesanan. Pilih menu di atas.</li>';
+  document.getElementById('total').textContent=rp(t);
+  return t;
+}
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t=render(),n=nama.value.trim(),p=hp.value.trim(),a=alamat.value.trim(),err=document.getElementById('err');
+  if(!t){err.textContent='Pilih minimal satu menu dulu.';return}
+  if(!n||!p||!a){err.textContent='Lengkapi nama, nomor WhatsApp, dan alamat pengantaran.';return}
+  err.textContent='';
+  var lines=ITEMS.filter(function(i){return qty[i.id]}).map(function(i){return '- '+qty[i.id]+'x '+i.name+' ('+rp(qty[i.id]*i.price)+')'});
+  var msg='Halo Admin POTATELLU, saya mau pesan (PO Batch 3):\n'+lines.join('\n')+'\n\nTotal: '+rp(t)+'\nNama: '+n+'\nWhatsApp: '+p+'\nAlamat: '+a+(cat.value.trim()?'\nCatatan: '+cat.value.trim():'')+'\n\nPengantaran: 26 November 2026';
+  window.open('https://wa.me/6281268976906?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body>
+</html>
